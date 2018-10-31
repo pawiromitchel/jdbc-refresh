@@ -9,6 +9,17 @@ public class Rol {
         this.naam = naam;
     }
 
+    public Rol() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNaam() {
         return naam;
     }

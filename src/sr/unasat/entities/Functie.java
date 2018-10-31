@@ -9,6 +9,17 @@ public class Functie {
         this.naam = naam;
     }
 
+    public Functie() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNaam() {
         return naam;
     }

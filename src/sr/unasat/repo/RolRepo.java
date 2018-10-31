@@ -1,14 +1,15 @@
 package sr.unasat.repo;
-import sr.unasat.entities.Werknemer;
+
+import sr.unasat.entities.Rol;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WerknemerRepo {
+public class RolRepo {
     private Connection connect;
 
-    public WerknemerRepo() {
+    public RolRepo() {
         initialize();
     }
 
@@ -33,8 +34,9 @@ public class WerknemerRepo {
         return false;
     }
 
-    public List<Werknemer> selectAll() {
-        List<Werknemer> outputList = new ArrayList();
+    public List<Rol> selectAll() {
+
+        List<Rol> outputList = new ArrayList();
         Statement statement = null;
         ResultSet resultSet = null;
 
@@ -42,31 +44,16 @@ public class WerknemerRepo {
             // Construeer een statement voor het uitvoeren van een SQL Query
             statement = connect.createStatement();
             // Voer de SQL statement uit en verzamel de output in de resultset
-            resultSet = statement.executeQuery("select * from werknemer");
+            resultSet = statement.executeQuery("select * from rol");
 
             while (resultSet.next()) {
-                Werknemer werknemer = new Werknemer();
 
                 int id = resultSet.getInt("id");
-                String voornaam = resultSet.getString("voornaam");
-                String achternaam = resultSet.getString("achternaam");
-                String extensie = resultSet.getString("extensie");
-                String telefoon = resultSet.getString("telefoon");
-                int afdeling = resultSet.getInt("afdeling");
-                int functie = resultSet.getInt("functie");
+                String naam = resultSet.getString("naam");
 
-                // Maak een student instantie en print deze instantie
-                werknemer.setId(id);
-                werknemer.setVoornaam(voornaam);
-                werknemer.setAchternaam(achternaam);
-                werknemer.setExtensie(extensie);
-                werknemer.setTelefoon(telefoon);
+                Rol rol = new Rol(id, naam);
 
-                if(afdeling > 0){
-                    werknemer.setAfdeling(new AfdelingRepo().selectRecord(afdeling));
-                }
-
-                outputList.add(werknemer);
+                outputList.add(rol);
             }
         } catch (SQLException e) {
             System.out.println("Er is een SQL fout ontstaan tijdens de select * statement!");

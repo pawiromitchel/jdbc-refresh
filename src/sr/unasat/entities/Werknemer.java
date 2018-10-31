@@ -20,6 +20,17 @@ public class Werknemer {
         this.rol = rol;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Werknemer() {
+    }
+
     public String getVoornaam() {
         return voornaam;
     }

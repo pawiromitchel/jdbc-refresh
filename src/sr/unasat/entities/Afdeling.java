@@ -10,8 +10,19 @@ public class Afdeling {
         this.naam = naam;
     }
 
+    public Afdeling() {
+    }
+
     public String getNaam() {
         return naam;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNaam(String naam) {
