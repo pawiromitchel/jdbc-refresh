@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a718efa7-7272-45ad-93aa-2afb8a2e0e1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/entities/Afdeling.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/entities/Afdeling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/entities/Functie.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/entities/Functie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/entities/Rol.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/entities/Rol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/entities/Werknemer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/entities/Werknemer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/sr/unasat/repo/WerknemerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sr/unasat/repo/WerknemerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sr/unasat/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sr/unasat/app/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="a718efa7-7272-45ad-93aa-2afb8a2e0e1c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +22,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="17" />
+          <entry key="java" value="18" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="18" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -46,13 +37,13 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="java" value="684" />
-          <entry key="txt" value="40" />
+          <entry key="txt" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="684" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -60,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sr/unasat/app/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/WerknemerRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -134,6 +125,18 @@
                 <element signature="e#335#336#0" expanded="true" />
                 <element signature="e#368#369#0" expanded="true" />
                 <element signature="e#396#397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/RolRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -249,7 +252,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542233587248" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542234923607" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -302,11 +305,19 @@
       <option name="project" value="LOCAL" />
       <updated>1542231320821</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added .sql">
+      <created>1542233653321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542233653321</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1035" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -341,23 +352,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Got select werknemers working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got select werknemers working" />
+    <MESSAGE value="added .sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .sql" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/jdbc-refresh.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/RolRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,20 +441,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/WerknemerRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/sr/unasat/app/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sr/unasat/app/App.java">
+    <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/RolRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="540">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sr/unasat/repo/WerknemerRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
