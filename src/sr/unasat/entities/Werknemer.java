@@ -86,4 +86,18 @@ public class Werknemer {
     public void setRol(List<Rol> rol) {
         this.rol = rol;
     }
+
+    @Override
+    public String toString() {
+        return "Werknemer{" +
+                "id=" + id +
+                ", voornaam='" + voornaam + '\'' +
+                ", achternaam='" + achternaam + '\'' +
+                ", extensie='" + extensie + '\'' +
+                ", telefoon='" + telefoon + '\'' +
+                ", afdeling=" + afdeling.getNaam() +
+                ", functie=" + functie.getNaam() +
+                ", rol=" + rol +
+                '}';
+    }
 }

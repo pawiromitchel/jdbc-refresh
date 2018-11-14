@@ -62,4 +62,39 @@ public class FunctieRepo {
 
         return outputList;
     }
+
+    public Functie selectRecord(int recordId) {
+
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        Functie functie = new Functie();
+
+        try {
+            // Statements allow to issue SQL queries to the database
+            preparedStatement = connect.prepareStatement("select * from functie where id = ?");
+            // Result set get the result of the SQL query
+            preparedStatement.setInt(1, recordId);
+            resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                // It is possible to get the columns via name
+                // also possible to get the columns via the column number
+                // which starts at 1
+                // e.g. resultSet.getSTring(2);
+
+                int id = resultSet.getInt("id");
+                String naam = resultSet.getString("naam");
+
+                // Maak een student instantie en print deze instantie
+                functie.setId(id);
+                functie.setNaam(naam);
+
+                System.out.println(functie);
+            }
+        } catch (SQLException e) {
+            System.out.println("Er is een SQL fout ontstaan tijdens de select statement!");
+        }
+
+        return functie;
+    }
 }

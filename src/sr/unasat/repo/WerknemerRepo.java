@@ -66,6 +66,10 @@ public class WerknemerRepo {
                     werknemer.setAfdeling(new AfdelingRepo().selectRecord(afdeling));
                 }
 
+                if(functie > 0){
+                    werknemer.setFunctie(new FunctieRepo().selectRecord(functie));
+                }
+
                 outputList.add(werknemer);
             }
         } catch (SQLException e) {
